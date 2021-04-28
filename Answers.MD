@@ -176,6 +176,151 @@ Madrid
 
 ### SELECT countrylanguage.language, countrylanguage.countrycode,  country.code,country.region     FROM countrylanguage INNER JOIN country ON countrylanguage.countrycode=country.code where country.region='Southeast Asia';
 
+# To get it in just the languages:
+
++---------------+
+
+| language      |
+
++---------------+
+
+| Chinese       |
+
+| English       |
+
+| Malay         |
+
+| Malay-English |
+
+| Bali          |
+
+| Banja         |
+
+| Batakki       |
+
+| Bugi          |
+
+| Javanese      |
+
+| Madura        |
+
+| Malay         |
+
+| Minangkabau   |
+
+| Sunda         |
+
+| Chinese       |
+
+| Khmer         |
+
+| Tšam          |
+
+| Vietnamese    |
+
+| Lao           |
+
+| Lao-Soung     |
+
+| Mon-khmer     |
+
+| Thai          |
+
+| Burmese       |
+
+| Chin          |
+
+| Kachin        |
+
+| Karen         |
+
+| Kayah         |
+
+| Mon           |
+
+| Rakhine       |
+
+| Shan          |
+
+| Chinese       |
+
+| Dusun         |
+
+| English       |
+
+| Iban          |
+
+| Malay         |
+
+| Tamil         |
+
+| Bicol         |
+
+| Cebuano       |
+
+| Hiligaynon    |
+
+| Ilocano       |
+
+| Maguindanao   |
+
+| Maranao       |
+
+| Pampango      |
+
+| Pangasinan    |
+
+| Pilipino      |
+
+| Waray-waray   |
+
+| Chinese       |
+
+| Malay         |
+
+| Tamil         |
+
+| Chinese       |
+
+| Khmer         |
+
+| Kuy           |
+
+| Lao           |
+
+| Malay         |
+
+| Thai          |
+
+| Portuguese    |
+
+| Sunda         |
+
+| Chinese       |
+
+| Khmer         |
+
+| Man           |
+
+| Miao          |
+
+| Muong         |
+
+| Nung          |
+
+| Thai          |
+
+| Tho           |
+
+| Vietnamese    |
++---------------+
+
+### SELECT countrylanguage.language  FROM countrylanguage INNER JOIN country ON countrylanguage.countrycode=country.code where country.region='Southeast Asia';
+
+Using
+###  SELECT distinct countrylanguage.language  FROM countrylanguage INNER JOIN country ON countrylanguage.countrycode=country.code where country.region='Southeast Asia';
+
+gives 47 unique stories. 
 
 - Using a single query, list 25 cities around the world that start with the letter F.
 
